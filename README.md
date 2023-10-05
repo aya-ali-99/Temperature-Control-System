@@ -5,15 +5,15 @@ This Project is based on AVR atmega32 and simulated on Proteus.
 -  Used External interrupt 0, ADC for Temperature sensor, I2C for EEPROM, Timer0 for DC motor, UART.
 
 Project description:
--- Choosing the mode:
+-		Choosing the mode:
   -  You can change between the screen 1 and screen 2 using the + and – keys on the keypad. 
   -  You can choose the mode using the corresponding number on the keypad.
   -  When the user chooses the mode the system should be in this mode until the home return button is pressed.
   -  When the home return button is pressed the current mode should stop and the system return to the first home screen.
-  1- Temperature control system:
-    -  This the main mode of the project. 
-    -  The temperature (T) should be kept between two reference temperatures (T_high , T_low saved by the used on an external EEPROM) using a fan derived by a DC motor. And           the LCD should show the temperature and the current operation (Normal, High, Low, and fire alarm). 
-       Ex: Temperature = 25 C   ---->   current op: Normal
+    -		1- Temperature control system:
+     -  This the main mode of the project. 
+     -  The temperature (T) should be kept between two reference temperatures (T_high , T_low saved by the used on an external EEPROM) using a fan derived by a DC motor. And           the LCD should show the temperature and the current operation (Normal, High, Low, and fire alarm). 
+      -	 Ex: Temperature = 25 C   ---->   current op: Normal
     -  If T_low < T < T_high --->  this is normal operation:
           1. The fan should be at 50% of full speed. 
           2. The green normal LED should be on.
@@ -31,9 +31,9 @@ Project description:
           2. The high red LED should be ON.
           3. The virtual terminal should display (Fire Alarm).
           4. The buzzer should be ON to alarm the user in case of fire.
-  2-  Set T_high, T_low:
+ -		 2-  Set T_high, T_low:
     -  In this mode the user should be able to set his reference temperature for the system to work between them using the keypad.
     -  The temperature references ( T_high, T_low) should be saved on an external EEPROM.
-  3-  Show T_high, T_low:
+ -		 3-  Show T_high, T_low:
     -  In this mode the user should be able to get the current reference temperature saved on the external EEPROM.
 
